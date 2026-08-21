@@ -105,7 +105,7 @@
 &kp EQUAL  &kp Q      &kp W       &kp E        &kp R        &kp T                                 &kp Y        &kp U        &kp I            &kp O         &kp P     &kp BACKSLASH
 &kp TAB    &kp A      &kp S       &kp D        &kp F        &kp G                                 &kp H        &kp J        &kp K            &kp L         &kp SEMI  &kp SQT
 &kp GRAVE  &kp Z      &ht LALT X  &ht LCTRL C  &ht LSHFT V  &kp B       &kp DQT        &kp MINUS  &kp N        &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp PG_UP
-&magic 9 0 &kp LGUI   &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL      &lt 4 RET  &lt 5 SPACE                                              &kp RALT  &kp PG_DN
+&mo MAG    &kp LGUI   &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL      &lt 4 RET  &lt 5 SPACE                                              &kp RALT  &kp PG_DN
             >;
             label = "QWE";
         };
@@ -116,7 +116,7 @@
 &kp EQUAL  &kp Q      &kp W       &kp E        &kp R        &kp T                                 &kp Y        &kp U        &kp I            &kp O         &kp P     &kp BACKSLASH
 &kp TAB    &kp A      &kp S       &kp D        &kp F        &kp G                                 &kp H        &kp J        &kp K            &kp L         &kp SEMI  &kp SQT
 &kp GRAVE  &kp Z      &ht LALT X  &ht LCTRL C  &ht LSHFT V  &kp B       &kp DQT        &kp MINUS  &kp N        &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp PG_UP
-&magic 9 0 &kp LGUI   &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL      &lt 4 RET  &lt 5 SPACE                                              &kp RALT  &kp PG_DN
+&mo MAG    &kp LGUI   &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL      &lt 4 RET  &lt 5 SPACE                                              &kp RALT  &kp PG_DN
             >;
             label = "GAL";
         };
@@ -127,7 +127,7 @@
 &kp EQUAL  &kp Q      &kp W       &kp F        &kp P        &kp B                                 &kp J        &kp L        &kp U            &kp Y         &kp SEMI  &kp BACKSLASH
 &kp TAB    &kp A      &kp R       &kp S        &kp T        &kp G                                 &kp M        &kp N        &kp E            &kp I         &kp O     &kp SQT
 &kp GRAVE  &kp Z      &ht LALT X  &ht LCTRL C  &ht LSHFT D  &kp V       &kp DQT        &kp MINUS  &kp K        &ht RSHFT H  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp PG_UP
-&magic 9 0 &kp LGUI   &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL      &lt 4 RET  &lt 5 SPACE                                              &kp RALT  &kp PG_DN
+&mo MAG    &kp LGUI   &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL      &lt 4 RET  &lt 5 SPACE                                              &kp RALT  &kp PG_DN
             >;
             label = "COL";
         };
