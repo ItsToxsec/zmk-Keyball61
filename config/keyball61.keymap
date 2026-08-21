@@ -91,8 +91,9 @@
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
-    };
 */
+    };
+
 
     keymap {
         compatible = "zmk,keymap";
