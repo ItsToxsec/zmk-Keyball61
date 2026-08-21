@@ -163,9 +163,9 @@
             label = "MED";
             bindings = <
 &none      &none       &none     &none      &none      &none                         &none           &none         &none         &none         &none         &none
-&kp ESC    &sys_reset  &none     &none      &none      &bootloader                   &bootloader     &none         &none         &none         &sys_reset    &kp FSLH
-&kp TAB    &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT  &out OUT_USB                  &out OUT_BLE    &none         &none         &none         &none         &kp MINUS
-&kp GRAVE  &none       &none     &none      &none      &bt BT_CLR    &trans  &trans  &kp C_STOP      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &bt BT_SEL 0  &none
+&none      &sys_reset  &none     &none      &none      &bootloader                   &bootloader     &none         &none         &none         &sys_reset    &kp FSLH
+&none      &none       &none     &none      &none      &out OUT_USB                  &out OUT_BLE    &none         &none         &none         &none         &kp MINUS
+&none      &none       &none     &none      &none      &bt BT_CLR    &trans  &trans  &kp C_STOP      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &bt BT_SEL 0  &none
 &trans     &trans      &trans    &trans     &trans     &trans        &trans  &trans  &rgb_ug RGB_TOG                                           &trans        &bt BT_CLR_ALL
             >;
         };
