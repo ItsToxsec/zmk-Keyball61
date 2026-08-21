@@ -49,35 +49,7 @@
         };
     };
 
-    macros {
-        bt_0: bt_profile_macro_0 {
-            label = "BT_0";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 0>;
-        };
-
-        bt_1: bt_profile_macro_1 {
-            label = "BT_1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 1>;
-        };
-
-        bt_2: bt_profile_macro_2 {
-            label = "BT_2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 2>;
-        };
-
-        bt_3: bt_profile_macro_3 {
-            label = "BT_3";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 3>;
-        };
-    };
+    macros {};
 
     combos { compatible = "zmk,combos"; };
 
@@ -168,7 +140,7 @@
 &none      &none       &none     &none      &none      &none                         &none           &none         &none         &none         &none         &none
 &none      &sys_reset  &none     &none      &none      &bootloader                   &bootloader     &none         &none         &none         &sys_reset    &none
 &none      &none       &none     &none      &none      &none                         &none           &to 0         &to 1         &to 2         &none         &none
-&none      &none       &none     &none      &none      &bt BT_CLR    &trans  &trans  &kp C_STOP      &bt_0         &bt_1         &bt_2         &bt_3         &none
+&none      &none       &none     &none      &none      &bt BT_CLR    &trans  &trans  &kp C_STOP      &bt BT_SEL 3  &bt BT_SEL 3  &bt BT_SEL 3  &bt BT_SEL 3  &none
 &trans     &trans      &trans    &trans     &trans     &trans        &trans  &to 3   &rgb_ug RGB_TOG                                           &trans        &bt BT_CLR_ALL
             >;
         };
