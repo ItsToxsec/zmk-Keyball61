@@ -50,7 +50,7 @@ layers:
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, s: '?'}
-  - PG UP
+  - HOME
   - MAG
   - LGUI
   - $$mdi:arrow-left-bold$$
@@ -60,8 +60,8 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: NAV}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
-  - $$mdi:apple-keyboard-option$$
-  - PG DN
+  - RGUI
+  - END
   GAL:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
@@ -112,7 +112,7 @@ layers:
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, s: '?'}
-  - PG UP
+  - HOME
   - MAG
   - LGUI
   - $$mdi:arrow-left-bold$$
@@ -122,8 +122,8 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: NAV}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
-  - $$mdi:apple-keyboard-option$$
-  - PG DN
+  - RGUI
+  - END
   COL:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
@@ -174,7 +174,7 @@ layers:
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, s: '?'}
-  - PG UP
+  - HOME
   - MAG
   - LGUI
   - $$mdi:arrow-left-bold$$
@@ -184,8 +184,8 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: NAV}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
-  - $$mdi:apple-keyboard-option$$
-  - PG DN
+  - RGUI
+  - END
   GAM:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
