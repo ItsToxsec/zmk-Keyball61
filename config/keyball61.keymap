@@ -59,7 +59,7 @@
         };
     };
 
-/*    macros {
+    macros {
         bt_0: bt_profile_macro_0 {
             label = "BT_0";
             compatible = "zmk,behavior-macro";
@@ -88,9 +88,7 @@
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
     };
-*/
 
-/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -178,7 +176,7 @@
 &kp EQUAL  &kp N1      &kp N2    &kp N3     &kp N4          &kp N5                        &kp N6        &kp N7      &kp N8        &kp N9        &kp N0      &kp MINUS
 &kp ESC    &sys_reset  &none     &none      &studio_unlock  &bootloader                   &bootloader   &none       &none         &none         &sys_reset  &kp FSLH
 &kp TAB    &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT       &out OUT_USB                  &out OUT_BLE  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &kp MINUS
-&kp GRAVE  &none       &none     &none      &none           &bt BT_CLR    &trans  &trans  &kp C_STOP    &none       &none         &none         &none       &none
+&kp GRAVE  &none       &none     &none      &none           &bt BT_CLR    &trans  &trans  &kp C_STOP    &bt_0       &bt_1         &bt_2         &bt_3       &none
 &trans     &trans     &trans     &trans     &trans          &trans        &trans  &trans  &trans                          &trans  &trans
             >;
         };
