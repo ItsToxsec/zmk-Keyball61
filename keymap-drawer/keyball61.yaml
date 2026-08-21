@@ -41,7 +41,7 @@ layers:
   - Z
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
-  - LSHFT V
+  - {t: V, h: '$$mdi:apple-keyboard-shift$$'}
   - B
   - '"'
   - {t: '-', s: _}
@@ -103,7 +103,7 @@ layers:
   - Z
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
-  - LSHFT V
+  - {t: V, h: '$$mdi:apple-keyboard-shift$$'}
   - B
   - '"'
   - {t: '-', s: _}
@@ -165,7 +165,7 @@ layers:
   - Z
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
-  - LSHFT D
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - V
   - '"'
   - {t: '-', s: _}
