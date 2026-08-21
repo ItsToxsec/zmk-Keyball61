@@ -2,35 +2,35 @@ layout: {zmk_keyboard: keyball61}
 layers:
   QWE:
   - $$mdi:keyboard-esc$$
+  - {t: '5', s: '%'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
-  - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '=', s: +}
+  - H
+  - T
   - Q
   - W
   - E
   - R
-  - T
   - Y
   - U
   - I
   - O
   - P
   - {t: \, s: '|'}
-  - $$mdi:keyboard-tab$$
+  - L
+  - M
   - A
   - S
   - D
   - F
-  - G
   - H
   - J
   - K
@@ -38,28 +38,28 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - {t: '`', s: '~'}
-  - Z
-  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-shift$$'}
   - B
-  - '"'
-  - {t: '-', s: _}
+  - Z
+  - X
+  - C
+  - V
+  - N
+  - {t: QWE, h: toggle}
   - N
   - {t: M, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, s: '?'}
   - HOME
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-left-bold$$
+  - $$mdi:keyboard-tab$$
+  - {t: '7', s: '&'}
+  - {t: '6', s: ^}
   - $$mdi:arrow-right-bold$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:backspace$$', h: MED}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: NAV}
-  - {t: '$$mdi:keyboard-return$$', h: NUM}
-  - {t: '$$mdi:keyboard-space$$', h: FUN}
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
   - RGUI
   - END
   GAL:
