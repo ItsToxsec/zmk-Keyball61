@@ -6,15 +6,14 @@
 #define FUN     5
 #define NAV     6
 #define MED     7
-
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 2500  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // 10
 
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 
 &sk {
@@ -49,8 +48,6 @@
         };
     };
 
-    macros {};
-
     combos { compatible = "zmk,combos"; };
 
     keymap {
@@ -58,45 +55,49 @@
 
         Qwerty_Layer {
             bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3       &kp N4       &kp N5                                &kp N6       &kp N7       &kp N8           &kp N9        &kp N0    &kp BSPC
-&kp EQUAL  &kp Q      &kp W       &kp E        &kp R        &kp T                                 &kp Y        &kp U        &kp I            &kp O         &kp P     &kp BACKSLASH
-&kp TAB    &kp A      &kp S       &kp D        &kp F        &kp G                                 &kp H        &kp J        &kp K            &kp L         &kp SEMI  &kp SQT
-&kp GRAVE  &kp Z      &ht LALT X  &ht LCTRL C  &ht LSHFT V  &kp B       &kp DQT        &kp MINUS  &kp N        &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp HOME
-&kp UP     &kp DOWN   &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL      &lt 4 RET  &lt 5 SPACE                                              &kp RGUI  &kp END
+&kp ESC    &kp N5  &kp N1  &kp N2     &kp N3     &kp N4                         &kp N6     &kp N7       &kp N8           &kp N9        &kp N0    &kp BSPC
+&kp H      &kp T   &kp Q   &kp W      &kp E      &kp R                          &kp Y      &kp U        &kp I            &kp O         &kp P     &kp BACKSLASH
+&kp L      &kp M   &kp A   &kp S      &kp D      &kp F                          &kp H      &kp J        &kp K            &kp L         &kp SEMI  &kp SQT
+&kp GRAVE  &kp B   &kp Z   &kp X      &kp C      &kp V      &kp N      &to 0    &kp N      &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp HOME
+&kp TAB    &kp N7  &kp N6  &kp RIGHT  &kp LSHFT  &kp SPACE  &kp LCTRL  &kp RET  &kp SPACE                                              &kp RGUI  &kp END
             >;
+
             label = "QWE";
         };
 
         GalMod_Layer {
             bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3       &kp N4       &kp N5                                &kp N6       &kp N7       &kp N8           &kp N9        &kp N0    &kp BSPC
-&kp EQUAL  &kp Q      &kp W       &kp E        &kp R        &kp T                                 &kp Y        &kp U        &kp I            &kp O         &kp P     &kp BACKSLASH
-&kp TAB    &kp A      &kp S       &kp D        &kp F        &kp G                                 &kp H        &kp J        &kp K            &kp L         &kp SEMI  &kp SQT
-&kp GRAVE  &kp Z      &ht LALT X  &ht LCTRL C  &ht LSHFT V  &kp B       &kp DQT        &kp MINUS  &kp N        &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp HOME
-&kp UP     &kp DOWN   &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL      &lt 4 RET  &lt 5 SPACE                                              &kp RGUI  &kp END
+&kp ESC    &kp N1    &kp N2      &kp N3       &kp N4       &kp N5                            &kp N6       &kp N7       &kp N8           &kp N9        &kp N0    &kp BSPC
+&kp EQUAL  &kp Q     &kp W       &kp E        &kp R        &kp T                             &kp Y        &kp U        &kp I            &kp O         &kp P     &kp BACKSLASH
+&kp TAB    &kp A     &kp S       &kp D        &kp F        &kp G                             &kp H        &kp J        &kp K            &kp L         &kp SEMI  &kp SQT
+&kp GRAVE  &kp Z     &ht LALT X  &ht LCTRL C  &ht LSHFT V  &kp B       &kp DQT    &kp MINUS  &kp N        &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp HOME
+&kp UP     &kp DOWN  &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL  &lt 4 RET  &lt 5 SPACE                                              &kp RGUI  &kp END
             >;
+
             label = "GAL";
         };
 
         Colemak_Layer {
             bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3       &kp N4       &kp N5                                &kp N6       &kp N7       &kp N8           &kp N9        &kp N0    &kp BSPC
-&kp EQUAL  &kp Q      &kp W       &kp F        &kp P        &kp B                                 &kp J        &kp L        &kp U            &kp Y         &kp SEMI  &kp BACKSLASH
-&kp TAB    &kp A      &kp R       &kp S        &kp T        &kp G                                 &kp M        &kp N        &kp E            &kp I         &kp O     &kp SQT
-&kp GRAVE  &kp Z      &ht LALT X  &ht LCTRL C  &ht LSHFT D  &kp V       &kp DQT        &kp MINUS  &kp K        &ht RSHFT H  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp HOME
-&kp UP     &kp DOWN   &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL      &lt 4 RET  &lt 5 SPACE                                              &kp RGUI  &kp END
+&kp ESC    &kp N1    &kp N2      &kp N3       &kp N4       &kp N5                            &kp N6       &kp N7       &kp N8           &kp N9        &kp N0    &kp BSPC
+&kp EQUAL  &kp Q     &kp W       &kp F        &kp P        &kp B                             &kp J        &kp L        &kp U            &kp Y         &kp SEMI  &kp BACKSLASH
+&kp TAB    &kp A     &kp R       &kp S        &kp T        &kp G                             &kp M        &kp N        &kp E            &kp I         &kp O     &kp SQT
+&kp GRAVE  &kp Z     &ht LALT X  &ht LCTRL C  &ht LSHFT D  &kp V       &kp DQT    &kp MINUS  &kp K        &ht RSHFT H  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp HOME
+&kp UP     &kp DOWN  &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL  &lt 4 RET  &lt 5 SPACE                                              &kp RGUI  &kp END
             >;
+
             label = "COL";
         };
 
         Gaming_Layer {
             bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3       &kp N4       &kp N5                                &kp N6       &kp N7       &kp N8           &kp N9        &kp N0    &kp BSPC
-&kp EQUAL  &kp Q      &kp W       &kp E        &kp R        &kp T                                 &kp Y        &kp U        &kp I            &kp O         &kp P     &kp BACKSLASH
-&kp TAB    &kp A      &kp S       &kp D        &kp F        &kp G                                 &kp H        &kp J        &kp K            &kp L         &kp SEMI  &kp SQT
-&kp GRAVE  &kp Z      &ht LALT X  &ht LCTRL C  &ht LSHFT V  &kp B       &kp DQT        &kp MINUS  &kp N        &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp PG_UP
-&kp LGUI   &kp MINUS  &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL      &lt 4 RET  &lt 5 SPACE                                              &kp RALT  &kp PG_DN
+&kp ESC    &kp N1     &kp N2      &kp N3       &kp N4       &kp N5                            &kp N6       &kp N7       &kp N8           &kp N9        &kp N0    &kp BSPC
+&kp EQUAL  &kp Q      &kp W       &kp E        &kp R        &kp T                             &kp Y        &kp U        &kp I            &kp O         &kp P     &kp BACKSLASH
+&kp TAB    &kp A      &kp S       &kp D        &kp F        &kp G                             &kp H        &kp J        &kp K            &kp L         &kp SEMI  &kp SQT
+&kp GRAVE  &kp Z      &ht LALT X  &ht LCTRL C  &ht LSHFT V  &kp B       &kp DQT    &kp MINUS  &kp N        &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH  &kp PG_UP
+&kp LGUI   &kp MINUS  &kp LEFT    &kp RIGHT    &kp LSHFT    &lt 7 BSPC  &lt 6 DEL  &lt 4 RET  &lt 5 SPACE                                              &kp RALT  &kp PG_DN
             >;
+
             label = "GAM";
         };
 
@@ -115,33 +116,33 @@
         function_layer {
             label = "FUN";
             bindings = <
-&trans  &trans  &trans   &trans   &trans   &trans                  &trans   &trans   &trans   &trans   &trans   &trans
-&none  &kp F21  &kp F22  &kp F23  &kp F24  &none                   &none    &none    &none    &none    &none    &none
-&none  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &none
-&trans &kp F11  &kp F12  &kp F13  &kp F14  &kp F15 &trans  &trans  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &trans
-&trans &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans                              &trans   &trans
+&trans  &trans   &trans   &trans   &trans   &trans                   &trans   &trans   &trans   &trans   &trans   &trans
+&none   &kp F21  &kp F22  &kp F23  &kp F24  &none                    &none    &none    &none    &none    &none    &none
+&none   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &none
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &trans
+&trans  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans                              &trans   &trans
             >;
         };
 
         nav_layer {
             label = "NAV";
             bindings = <
-&none  &none      &none         &none       &none         &none                       &none      &none          &none             &none     &none      &none
-&none  &kp PSCRN  &none         &none       &none         &none                       &none      &kp C_AC_BACK  &kp C_AC_FORWARD  &none     &none      &none
-&none  &kp LGUI   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp PG_UP                   &kp PG_DN  &kp UP         &kp DOWN          &kp LEFT  &kp RIGHT  &none
-&none  &none      &none         &kp LALT    &kp TAB       &kp HOME  &none     &none   &kp END    &kp H          &kp J             &kp K     &kp L      &none
-&none  &none      &none         &none       &none         &none     &none     &none   &none                                                 &none      &none
+&none  &none      &none         &none       &none         &none                    &none      &none          &none             &none     &none      &none
+&none  &kp PSCRN  &none         &none       &none         &none                    &none      &kp C_AC_BACK  &kp C_AC_FORWARD  &none     &none      &none
+&none  &kp LGUI   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp PG_UP                &kp PG_DN  &kp UP         &kp DOWN          &kp LEFT  &kp RIGHT  &none
+&none  &none      &none         &kp LALT    &kp TAB       &kp HOME   &none  &none  &kp END    &kp H          &kp J             &kp K     &kp L      &none
+&none  &none      &none         &none       &none         &none      &none  &none  &none                                                 &none      &none
             >;
         };
 
         med_layer {
             label = "MED";
             bindings = <
-&none      &none       &none     &none      &none      &none                         &none           &none         &none         &none         &none         &none
-&none      &sys_reset  &none     &none      &none      &bootloader                   &bootloader     &none         &none         &none         &sys_reset    &none
-&none      &none       &none     &none      &none      &none                         &none           &to 0         &to 1         &to 2         &none         &none
-&none      &none       &none     &none      &none      &bt BT_CLR    &trans  &trans  &kp C_STOP      &bt BT_SEL 3  &bt BT_SEL 3  &bt BT_SEL 3  &bt BT_SEL 3  &none
-&trans     &trans      &trans    &trans     &trans     &trans        &trans  &to 3   &rgb_ug RGB_TOG                                           &trans        &bt BT_CLR_ALL
+&none   &none       &none   &none   &none   &none                        &none            &none         &none         &none         &none         &none
+&none   &sys_reset  &none   &none   &none   &bootloader                  &bootloader      &none         &none         &none         &sys_reset    &none
+&none   &none       &none   &none   &none   &none                        &none            &to 0         &to 1         &to 2         &none         &none
+&none   &none       &none   &none   &none   &bt BT_CLR   &trans  &trans  &kp C_STOP       &bt BT_SEL 3  &bt BT_SEL 3  &bt BT_SEL 3  &bt BT_SEL 3  &none
+&trans  &trans      &trans  &trans  &trans  &trans       &trans  &to 3   &rgb_ug RGB_TOG                                            &trans        &bt BT_CLR_ALL
             >;
         };
     };
